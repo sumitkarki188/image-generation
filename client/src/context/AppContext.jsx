@@ -11,8 +11,7 @@ const AppContextProvider = (props) => {
   const [token, setToken] = useState(localStorage.getItem("token"));
   const [credits, setCredits] = useState(5);
 
-  const backendUrl =
-    import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+  const backendUrl = "https://image-generation-backend-inyj.onrender.com"
 
   const navigate = useNavigate();
 
